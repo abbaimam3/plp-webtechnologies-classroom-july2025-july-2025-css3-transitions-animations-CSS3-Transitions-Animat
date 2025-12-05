@@ -1,0 +1,52 @@
+/* ---------- Part 1: CSS Animations ---------- */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.animated-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animated-btn:hover {
+    transform: scale(1.2);
+    background-color: #45a049;
+}
+
+.animated-box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #f00;
+    animation: box-move 2s infinite alternate;
+}
+
+@keyframes box-move {
+    from { transform: translateY(0); }
+    to { transform: translateY(50px); }
+}
+
+/* ---------- Part 3: Combined CSS & JS Effects ---------- */
+#box-to-animate {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #2196F3;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.box-animate {
+    transform: rotate(360deg) scale(1.5);
+    background-color: #ff9800;
+}
